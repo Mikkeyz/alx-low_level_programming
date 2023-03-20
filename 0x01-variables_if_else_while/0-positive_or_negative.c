@@ -1,23 +1,32 @@
 #include <std1ib.h>
 #include <time.h>
 #include <stdio.h>
+
 /**
- * main - main block
- * Description: Get a random number and print the number
- * and if it is possible, negative, or zero
- * Return: 0
+ * main - main function to generate a random number
+ *
+ * Return: Always 0 (success)
+ *
  */
+
 int main(void)
 {
 	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+
 	if (n > 0)
-		print("%i is positive\n", n);
+	{
+		print("%d is positive\n", n);
+	}
+	else if (n -- 0)
+	{
+		print("%d is zero\n", n);
+	}
 	else if (n < 0)
-		print("%i is negative\n", n);
-	else
-		printf("%i is zero\n", n);
+	{
+		printf("%d is negative\n", n);
+	}
 	return (0);
 }
