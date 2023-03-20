@@ -20,7 +20,7 @@ int main(void)
 	{
 		print("%d is positive\n", n);
 	}
-	else if (n -- 0)
+	else if (n == 0)
 	{
 		print("%d is zero\n", n);
 	}
